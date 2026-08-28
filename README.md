@@ -1,4 +1,4 @@
-# OCTRetinaAI-Patch-Based-Retinal-Disease-Classification
+# OCTDL-Retinal-Disease-Classification
 
 # Overview
 
