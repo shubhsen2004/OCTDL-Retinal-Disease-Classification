@@ -82,13 +82,41 @@ Note: The dataset itself is not included in this repository. Please download it 
         7-Class Task        Binary Task
 
 ```
+# Feature Extraction
+| Backbone    | Parameters | Trainable Parameters |
+| ----------- | ---------: | -------------------: |
+| MobileNetV2 |      3.50M |                    0 |
+| DarkNet53   |     41.61M |                    0 |
+| DenseNet201 |     20.01M |                    0 |
 
-Class-wise Results
-Class	Sensitivity	Specificity	Precision	F1-Score
-AMD	97.40%	93.28%	95.54%	96.46%
-DME	79.59%	98.80%	83.57%	81.53%
-ERM	86.45%	99.27%	90.54%	88.45%
-NO	94.28%	97.92%	89.68%	91.92%
-RAO	81.82%	100.00%	100.00%	90.00%
-RVO	70.30%	99.18%	81.61%	75.53%
-VID	82.89%	99.80%	94.03%	88.11%
+#Results
+7-Class Classification
+
+The implementation achieved:
+92.78% accuracy
+
+# Class-wise Results
+| Class | Sensitivity | Specificity | Precision | F1-Score |
+| ----- | ----------: | ----------: | --------: | -------: |
+| AMD   |      97.40% |      93.28% |    95.54% |   96.46% |
+| DME   |      79.59% |      98.80% |    83.57% |   81.53% |
+| ERM   |      86.45% |      99.27% |    90.54% |   88.45% |
+| NO    |      94.28% |      97.92% |    89.68% |   91.92% |
+| RAO   |      81.82% |     100.00% |   100.00% |   90.00% |
+| RVO   |      70.30% |      99.18% |    81.61% |   75.53% |
+| VID   |      82.89% |      99.80% |    94.03% |   88.11% |
+
+# Binary Classification
+The implementation achieved:
+97.63% accuracy
+
+# Comparison With the Reference Paper
+| Metric           | Reference PatchBridgeNet | This Implementation |
+| ---------------- | -----------------------: | ------------------: |
+| 7-Class Accuracy |                   92.30% |          **92.78%** |
+| Binary Accuracy  |                   97.40% |          **97.63%** |
+| ERM F1           |                   83.00% |          **88.45%** |
+| RAO F1           |                   81.00% |          **90.00%** |
+| RVO F1           |                   74.46% |          **75.53%** |
+| VID F1           |                   85.29% |          **88.11%** |
+
