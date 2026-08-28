@@ -30,15 +30,16 @@ Compared different patch counts, CNN backbones, feature-selection methods, and c
 
 The project uses the OCTDL dataset, containing 2,064 OCT images across seven classes:
 
-Class	                Images
-AMD	                  1,231
-NO (Normal)	            332
-ERM	                    155
-DME	                    147
-RVO	                    101
-VID	                    76
-RAO	                    22
-Total	                2,064
+| Class       |    Images |
+| ----------- | --------: |
+| AMD         |     1,231 |
+| NO (Normal) |       332 |
+| ERM         |       155 |
+| DME         |       147 |
+| RVO         |       101 |
+| VID         |        76 |
+| RAO         |        22 |
+| **Total**   | **2,064** |
 
 The dataset is imbalanced, with RAO being the smallest class.
 
